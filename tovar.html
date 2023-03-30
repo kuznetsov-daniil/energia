@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Энергия</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c6b2937464.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="./index.html" class="header__logo">
+                <img src="img/energy_logo_small_black.svg" alt="">
+            </a>
+            <nav>
+                <ul class="menu page-menu">
+                    <li class="menu__item">
+                        <a href="./katalog.html">Кассовые боксы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./tovar.html">Металлоизделия</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./tovar.html">В наличии</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./companiya.html">Компания</a>
+                    </li>
+                    <li class="busket busket-black">
+                        <img src="img/busket-black.png" alt="">
+                        <div class="busket__dropdown">
+                            <div class="dropdown__title">
+                                <span>3</span> товара в корзине
+                            </div>
+                            <div class="dropdown__items-wrapper">
+                                <div class="dropdown__item" id="product1">
+                                    <a href="#" class="item__name">
+                                        EL MINI-5
+                                    </a>
+                                    <div class="item__number_wrapper">
+                                        <input class="item__number" value="1">
+                                        <a href="#product1" class="item__delete">
+                                            <i class="fas fa-times delete__icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dropdown__item" id="product2">
+                                    <a href="#" class="item__name">
+                                        EL MINI-11
+                                    </a>
+                                    <div class="item__number_wrapper">
+                                        <input class="item__number" value="2">
+                                        <a href="#product2" class="item__delete">
+                                            <i class="fas fa-times delete__icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dropdown__item" id="product3">
+                                    <a href="#" class="item__name">
+                                        EL MINI-13
+                                    </a>
+                                    <div class="item__number_wrapper">
+                                        <input class="item__number" value="10">
+                                        <a href="#product3" class="item__delete">
+                                            <i class="fas fa-times delete__icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown__order">
+                                <a href="#" class="order__button">
+                                    Оформить заказ
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__contacts-and-hamburger-wrapper">
+                <li class="busket mobile-busket busket-black">
+                    <img src="img/busket-black.png" alt="">
+                    <div class="busket__dropdown">
+                        <div class="dropdown__title">
+                            <span>3</span> товара в корзине
+                        </div>
+                        <div class="dropdown__items">
+                            <div class="dropdown__item" id="product1">
+                                <a href="#" class="item__name">
+                                    EL MINI-5
+                                </a>
+                                <div class="item__number_wrapper">
+                                    <input class="item__number" value="1">
+                                    <a href="#product1" class="item__delete">
+                                        <i class="fas fa-times delete__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown__item" id="product2">
+                                <a href="#" class="item__name">
+                                    EL MINI-11
+                                </a>
+                                <div class="item__number_wrapper">
+                                    <input class="item__number" value="2">
+                                    <a href="#product2" class="item__delete">
+                                        <i class="fas fa-times delete__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown__item" id="product3">
+                                <a href="#" class="item__name">
+                                    EL MINI-13
+                                </a>
+                                <div class="item__number_wrapper">
+                                    <input class="item__number" value="10">
+                                    <a href="#product3" class="item__delete">
+                                        <i class="fas fa-times delete__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown__order">
+                            <a href="#" class="order__button">
+                                Оформить заказ
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <div class="header__contacts">
+                    <div class="contacts__phone page-phone">
+                        <a href="tel:+7474667"><span>+7 (47467)</span> 4-16-14, 2-71-01</a>
+                    </div>
+                    <div class="contacts__email page-email">
+                        <a href="#">
+                            marketing@ao-energiya.ru
+                        </a>
+                    </div>
+                </div>
+                <div class="hamburger page-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown-menu page-dropdown">
+            <div class="menu-wrapper">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#">Кассовые боксы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">Металлоизделия</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">В наличии</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">Компания</a>
+                    </li>
+                </ul>
+                <div class="dropdown__contacts">
+                    <div class="contacts__phone">
+                        <a href="tel:+7474667"><span>+7 (47467)</span> 4-16-14, 2-71-01</a>
+                    </div>
+                    <div class="contacts__email">
+                        <a href="#">
+                            marketing@ao-energiya.ru
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__close">
+                <i class="fas fa-times close-icon"></i>
+            </div>
+        </div>
+        <div class="header__tagline page-tagline">
+            Больше 10 лет на рынке
+        </div>
+    </header>
+    <section id="product">
+        <div class="container">
+            <div class="product__title">
+                EL MINI-3
+            </div>
+            <div class="product__wrapper">
+                <div id="product__gallery">
+                    <div id="panel">
+                        <img id="largeImage" src="img/cashbox-active_01_large.png" />
+                    </div>
+                    <div id="thumbs">
+                        <div class="thumbs__wrapper">
+                           <div class="thumbs__mobile-wrapper">
+                            <div class="img__wrapper">
+                                <img src="img/cashbox-active_01_thumb.png" alt=""/ class="thumb-active">
+                            </div>
+                            <div class="img__wrapper">
+                                <img src="img/cashbox-active_02_thumb.png" alt="" />
+                            </div>
+                            </div>
+                            <div class="thumbs__mobile-wrapper">
+                            <div class="img__wrapper wrapper2">
+                                <img src="img/cashbox-active_03_thumb.png" alt="" />
+                            </div>
+                            <div class="img__wrapper wrapper2">
+                                <img src="img/cashbox-active_04_thumb.png" alt="" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="thumbs__wrapper">
+                           <div class="img__wrapper">
+                            <img src="img/cashbox-active_05_thumb.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__specifications">
+                    <p class="specifications__desc">
+                        Самый компактный бокс среди моделей без транспортера, но с емким накопителем, оборудованным разделителем товара и позволяющий одновременно обслуживать двух покупателей. Обеспечивает более высокий класс обслуживания.
+                    </p>
+                    <div class="specifications__items">
+                        <div class="items__title">
+                            Технические характеристики:
+                        </div>
+                        <form action="" class="product__form">
+                            <div class="form__item">
+                                <div class="form-item__name">
+                                    Ширина столешницы:
+                                </div>
+                                <div class="select-wrapper">
+                                    <select id="select1">
+                                        <option value="1">400</option>
+                                        <option value="2">500</option>
+                                    </select>
+                                    <div class="item__units">
+                                        мм
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__item">
+                                <div class="form-item__name">
+                                    Высота бокса:
+                                </div>
+                                <div class="select-wrapper">
+                                    <select id="select2">
+                                        <option value="1">860</option>
+                                        <option value="2">860</option>
+                                    </select>
+                                    <div class="item__units">
+                                        мм
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__item">
+                                <div class="form-item__name">
+                                    Длина бокса:
+                                </div>
+                                <div class="select-wrapper">
+                                    <select id="select3">
+                                        <option value="1">1440</option>
+                                        <option value="2">1440</option>
+                                    </select>
+                                    <div class="item__units">
+                                        мм
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__item">
+                                <div class="form-item__name">
+                                    Направленность:
+                                </div>
+                                <div class="select-wrapper">
+                                    <select id="select4">
+                                        <option value="1">Левый</option>
+                                        <option value="2">Левый</option>
+                                    </select>
+                                    <div class="item__units opacsity-0">
+                                        мм
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__item">
+                                <div class="form-item__name">
+                                    Цвет (RAL):
+                                </div>
+                                <div class="select-wrapper">
+                                    <div class="select">
+                                        <div class="round"></div>
+                                        <div class="round round2-select"></div>
+                                        <div class="select__number number1">
+                                            1014
+                                        </div>
+                                        <div class="select__number number2">
+                                            1015
+                                        </div>
+                                        <i class="fas fa-caret-down"></i>
+                                        <div class="select-dropdown">
+                                            <div class="dropdown-item dropdown__item1">
+                                                <div class="round round-option"></div>
+                                                <div class="select__number-item">
+                                                    1014
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-item dropdown__item2">
+                                                <div class="round round-option round2"></div>
+                                                <div class="select__number-item">
+                                                    1015
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <select>
+                                            <option value="1"></option>
+                                            <option value="2"></option>
+                                        </select>
+                                    </div>
+                                    <div class="item__units opacity-0">
+                                        мм
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="color-desc">
+                                Возможно изготовление в нестандартном цвете.<br>Подробности уточняйте у менеджера.
+                            </p>
+                            <div class="form__item">
+                                <div class="form-item__name">
+                                    Сталь (покрытие):
+                                </div>
+                                <div class="select-wrapper">
+                                    <select id="select4">
+                                        <option value="1">Шлиф</option>
+                                        <option value="2">Шлиф</option>
+                                    </select>
+                                    <div class="item__units opacity-0">
+                                        мм
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__item">
+                                <div class="form-item__name">
+                                    Отбойник:
+                                </div>
+                                <div class="select-wrapper">
+                                    <div class="select2">
+                                        <div class="select__content">
+                                            <div class="content__wrapper1">
+                                                <p class="wrapper__name1">
+                                                    Узкий
+                                                </p>
+                                                <p class="wrapper__name wrapper__name2">
+                                                    Широкий
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <i class="fas fa-caret-down"></i>
+                                        <div class="select-dropdown1">
+                                            <div class="select__content1 select__content">
+                                                <div class="content__square"></div>
+                                                <div class="content__wrapper1">
+                                                    <p class="wrapper__name3">
+                                                        Узкий
+                                                    </p>
+                                                    <p class="wrapper__desc">
+                                                        Защита от ударов тележки
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="select__content select__content2">
+                                                <div class="content__square"></div>
+                                                <div class="content__wrapper1">
+                                                    <p class="wrapper__name3">
+                                                        Широкий
+                                                    </p>
+                                                    <p class="wrapper__desc">
+                                                        Пластиковая защита по<br>всему периметру бокса
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <select>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                    </div>
+                                    <div class="item__units opacity-0">
+                                        мм
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <button class="product__btn-order">
+                        Добавить в заказ
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="add">
+        <div class="container">
+            <div class="add__title">
+                Дополнительные аксессуары для этого товара
+            </div>
+            <div class="add__items">
+               <div class="items__wrapper">
+                <div class="add__item">
+                    <img src="img/cashbox-active_01_thumb.png" alt="">
+                    <p class="item__designation">
+                        Защита сканера
+                    </p>
+                </div>
+                <div class="add__item">
+                    <img src="img/cashbox-active_01_thumb.png" alt="">
+                    <p class="item__designation">
+                        Защита кассира<br>передняя
+                    </p>
+                </div>
+                </div>
+                <div class="items__wrapper">
+                <div class="add__item">
+                    <img src="img/cashbox-active_01_thumb.png" alt="">
+                    <p class="item__designation">
+                        Защита кассира<br>напольная
+                    </p>
+                </div>
+                <div class="add__item">
+                    <img src="img/cashbox-active_01_thumb.png" alt="">
+                    <p class="item__designation">
+                        Дверь в кассовый<br>бокс
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="form">
+        <div class="container">
+            <h2 class="form__title">
+                Индивидуальный заказ
+            </h2>
+            <div class="form__wrapper">
+                <p class="form__desc">
+                    Мы разрабатываем изделия по вашим индивидуальным техническим заданиям. Оставьте заявку, и наш менеджер свяжется с вами в ближайшее время для уточнения деталей.
+                </p>
+                <div class="form__left-section">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Номер телефона">
+                    <input type="text" placeholder="Электронная почта">
+                    <input type="file" id="file">
+                    <label for="file">Прикрепить файл</label>
+                </div>
+                <div class="form__right-section">
+                    <textarea name="" placeholder="Комментарий"></textarea>
+                    <div class="right-section__wrapper">
+                        <a href="#" class="politic">
+                            <i class="far fa-file-pdf black-pdf"></i>
+                            <p>Политика<br>конфиденциальности</p>
+                        </a>
+                        <button class="form-submit">
+                            Оставить заявку
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <a href="" class="footer__logo">
+                    <img src="img/energy_logo_small.svg" alt="">
+                </a>
+                <ul class="footer__menu">
+                    <li class="footer__item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Кассовые боксы</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Металлоизделия</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">В наличии</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Компания</a>
+                    </li>
+                </ul>
+                <div class="pdf-items">
+                    <a href="#" class="pdf-item">
+                        <img src="img/pdf.png" alt="">
+                        <p>Кассовые боксы и акссесуары</p>
+                    </a>
+                    <a href="#" class="pdf-item">
+                        <img src="img/pdf.png" alt="">
+                        <p>Металлоизделия</p>
+                    </a>
+                    <a href="#" class="pdf-item">
+                        <img src="img/pdf.png" alt="">
+                        <p>Политика конфиденциальности</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__right">
+                <p class="form-title">Обратная звязь</p>
+                <form action="" class="footer__form">
+                    <input type="email" placeholder="Электронная почта">
+                    <button type="submit">Отправьте</button>
+                </form>
+                <div class="footer__social">
+                    <a href=""><i class="fab fa-vk social__vk"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f social__facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram social__instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

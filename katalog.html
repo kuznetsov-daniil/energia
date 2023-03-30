@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Энергия</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/c6b2937464.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <a href="./index.html" class="header__logo">
+                <img src="img/energy_logo_small_black.svg" alt="">
+            </a>
+            <nav>
+                <ul class="menu page-menu">
+                    <li class="menu__item">
+                        <a href="./katalog.html">Кассовые боксы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./tovar.html">Металлоизделия</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./tovar.html">В наличии</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./companiya.html">Компания</a>
+                    </li>
+                    <li class="busket busket-black">
+                        <img src="img/busket-black.png" alt="">
+                        <div class="busket__dropdown">
+                            <div class="dropdown__title">
+                                <span>3</span> товара в корзине
+                            </div>
+                            <div class="dropdown__items">
+                                <div class="dropdown__item" id="product1">
+                                    <a href="#" class="item__name">
+                                        EL MINI-5
+                                    </a>
+                                    <div class="item__number_wrapper">
+                                        <input class="item__number" value="1">
+                                        <a href="#product1" class="item__delete">
+                                            <i class="fas fa-times delete__icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dropdown__item" id="product2">
+                                    <a href="#" class="item__name">
+                                        EL MINI-11
+                                    </a>
+                                    <div class="item__number_wrapper">
+                                        <input class="item__number" value="2">
+                                        <a href="#product2" class="item__delete">
+                                            <i class="fas fa-times delete__icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="dropdown__item" id="product3">
+                                    <a href="#" class="item__name">
+                                        EL MINI-13
+                                    </a>
+                                    <div class="item__number_wrapper">
+                                        <input class="item__number" value="10">
+                                        <a href="#product3" class="item__delete">
+                                            <i class="fas fa-times delete__icon"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown__order">
+                                <a href="#" class="order__button">
+                                    Оформить заказ
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__contacts-and-hamburger-wrapper">
+                <li class="busket mobile-busket busket-black">
+                    <img src="img/busket-black.png" alt="">
+                    <div class="busket__dropdown">
+                        <div class="dropdown__title">
+                            <span>3</span> товара в корзине
+                        </div>
+                        <div class="dropdown__items">
+                            <div class="dropdown__item" id="product1">
+                                <a href="#" class="item__name">
+                                    EL MINI-5
+                                </a>
+                                <div class="item__number_wrapper">
+                                    <input class="item__number" value="1">
+                                    <a href="#product1" class="item__delete">
+                                        <i class="fas fa-times delete__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown__item" id="product2">
+                                <a href="#" class="item__name">
+                                    EL MINI-11
+                                </a>
+                                <div class="item__number_wrapper">
+                                    <input class="item__number" value="2">
+                                    <a href="#product2" class="item__delete">
+                                        <i class="fas fa-times delete__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="dropdown__item" id="product3">
+                                <a href="#" class="item__name">
+                                    EL MINI-13
+                                </a>
+                                <div class="item__number_wrapper">
+                                    <input class="item__number" value="10">
+                                    <a href="#product3" class="item__delete">
+                                        <i class="fas fa-times delete__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown__order">
+                            <a href="#" class="order__button">
+                                Оформить заказ
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <div class="header__contacts">
+                    <div class="contacts__phone page-phone">
+                        <a href="tel:+7474667"><span>+7 (47467)</span> 4-16-14, 2-71-01</a>
+                    </div>
+                    <div class="contacts__email page-email">
+                        <a href="#">
+                            marketing@ao-energiya.ru
+                        </a>
+                    </div>
+                </div>
+                <div class="hamburger page-hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown-menu page-dropdown">
+            <div class="menu-wrapper">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="#">Кассовые боксы</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">Металлоизделия</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">В наличии</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">Компания</a>
+                    </li>
+                </ul>
+                <div class="dropdown__contacts">
+                    <div class="contacts__phone">
+                        <a href="tel:+7474667"><span>+7 (47467)</span> 4-16-14, 2-71-01</a>
+                    </div>
+                    <div class="contacts__email">
+                        <a href="#">
+                            marketing@ao-energiya.ru
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__close">
+                <i class="fas fa-times close-icon"></i>
+            </div>
+        </div>
+        <div class="header__tagline page-tagline">
+            Больше 10 лет на рынке
+        </div>
+    </header>
+    <section id="boxes">
+        <div class="container">
+            <h1 class="boxes__title">
+                Кассовые боксы
+            </h1>
+            <a href="#" class="boxes__download">
+                <img src="img/pdf-black.png" alt="">
+                <p>Скачать печатную версию каталога</p>
+            </a>
+            <div class="boxes__tabs">
+                <ul class="tabs">
+                        <li><a href="#tab1">Экспресс-кассы</a></li>
+                        <li><a href="#tab2">Минимаркет</a></li>
+                        <li><a href="#tab3">Супермаркет</a></li>
+                        <li><a href="#tab4">Гипермаркет</a></li>
+                        <li><a href="#tab5">Аксессуары</a></li>
+                </ul>
+                <p class="tabs__title">
+                    Для магазинов от 100 м3 до 300 м3
+                </p>
+                <div class="tab-container">
+                    <div class="tab-content" id="tab1">
+
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-3
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-4
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-5
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-6
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-7
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-8
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-9
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-10
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-11
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-12
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-13
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-14
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="tabs__pagination">
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab2">
+
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-3
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-4
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-5
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-6
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-7
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-8
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-9
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-10
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-11
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-12
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-13
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-14
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="tabs__pagination">
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab3">
+
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-3
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-4
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-5
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-6
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-7
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-8
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-9
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-10
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-11
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-12
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-13
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-14
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="tabs__pagination">
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab4">
+
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-3
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-4
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-5
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-6
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-7
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-8
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-9
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-10
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-11
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-12
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a class="item__title">
+                                    EL MINI-13
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-14
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="tabs__pagination">
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="tab5">
+
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-3
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-4
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-5
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-6
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-7
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-8
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-9
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-10
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-11
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content__wrapper">
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-12
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-13
+                                </a>
+                            </div>
+                            <div class="content__item">
+                                <img src="img/cashbox.png" alt="">
+                                <a href="#" class="item__title">
+                                    EL MINI-14
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="tabs__pagination">
+                            <li><a href="#" class="active">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="form">
+        <div class="container">
+            <h2 class="form__title">
+                Индивидуальный заказ
+            </h2>
+            <div class="form__wrapper">
+                <p class="form__desc">
+                    Мы разрабатываем изделия по вашим индивидуальным техническим заданиям. Оставьте заявку, и наш менеджер свяжется с вами в ближайшее время для уточнения деталей.
+                </p>
+                <div class="form__left-section">
+                    <input type="text" placeholder="Имя">
+                    <input type="text" placeholder="Номер телефона">
+                    <input type="text" placeholder="Электронная почта">
+                    <input type="file" id="file">
+                    <label for="file">Прикрепить файл</label>
+                </div>
+                <div class="form__right-section">
+                    <textarea name="" placeholder="Комментарий"></textarea>
+                    <div class="right-section__wrapper">
+                        <a href="#" class="politic">
+                            <i class="far fa-file-pdf black-pdf"></i>
+                            <p>Политика<br>конфиденциальности</p>
+                        </a>
+                        <button class="form-submit">
+                            Оставить заявку
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer__wrapper">
+            <div class="footer__left">
+                <a href="" class="footer__logo">
+                    <img src="img/energy_logo_small.svg" alt="">
+                </a>
+                <ul class="footer__menu">
+                    <li class="footer__item">
+                        <a href="#">Главная</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Кассовые боксы</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Металлоизделия</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">В наличии</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#">Компания</a>
+                    </li>
+                </ul>
+                <div class="pdf-items">
+                    <a href="#" class="pdf-item">
+                        <img src="img/pdf.png" alt="">
+                        <p>Кассовые боксы и акссесуары</p>
+                    </a>
+                    <a href="#" class="pdf-item">
+                        <img src="img/pdf.png" alt="">
+                        <p>Металлоизделия</p>
+                    </a>
+                    <a href="#" class="pdf-item">
+                        <img src="img/pdf.png" alt="">
+                        <p>Политика конфиденциальности</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__right">
+                <p class="form-title">Обратная звязь</p>
+                <form action="" class="footer__form">
+                    <input type="email" placeholder="Электронная почта">
+                    <button type="submit">Отправьте</button>
+                </form>
+                <div class="footer__social">
+                    <a href=""><i class="fab fa-vk social__vk" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f social__facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fab fa-instagram social__instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
